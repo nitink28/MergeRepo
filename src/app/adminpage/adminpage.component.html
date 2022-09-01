@@ -1,0 +1,66 @@
+<div id="navbar">
+  <img src="../../assets/images/logo.jpeg" style="width: 150px; height: 40px; margin-left: 24px; margin-top: 10px;">
+  <ul id="links">
+    
+    <li class="link"  [routerLink]="['/indexLink']">Home </li>
+    <li class="link"  [routerLink]="['/addproducts']">Add Products</li>
+    <li class="link"  [routerLink]="['/showallcards']">Show Cards</li>
+   
+  </ul>
+  <br style="clear: both" />
+</div>
+
+<form>
+<table>
+    <tr>
+        <th colspan="14" style="text-align:center;font-size: 30px; padding-bottom: 40px;padding-top: 30px;">USER DETAILS DATABASE</th>
+    </tr>
+  <tr>
+    <th>RegID</th>
+    <th>UName</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Adharr No.</th>
+    <th>PAN No.</th>
+    <th>Card Type</th>
+    <th>Bank Name</th>
+    <th>Account No.</th>
+    <th>Ifsc code</th>
+    <th>Applied_on</th>
+    <th>IsVerified</th>
+    <!-- <th>Approve</th> -->
+    <th>Create Card</th>
+    <th>Delete</th>
+    
+    
+  </tr>
+  <tr *ngFor="let u of user" >
+    <td>{{u.regid}}</td>
+    <td>{{u.uname}}</td>
+    <td>{{u.phone}}</td>
+    <td>{{u.email}}</td>
+    <td>{{u.address}}</td>
+    <td>{{u.adhaarCard}}</td>
+    <td>{{u.panCard}}</td>
+    <td>{{u.cardtype}}</td>
+    <td>{{u.bankname}}</td>
+    <td>{{u.acc_no}}</td>
+    <td>{{u.ifsc_code}}</td>
+    <td>{{u.applied_on}}</td>
+    <td>{{u.isVerified}}</td>
+    
+ 
+     <!-- <td><button class="button" (click)="OnClick()">verify</button></td>  -->
+   <!--<td><button class="button" (click)="OnClick(u.regid)">verify</button></td> -->
+   <!-- <td><button class="button" (click)="OnClick(u.regid)">verify</button></td> -->
+   <!-- <td><button class="button"  (click)="OnClick(u.regid)">verify</button></td> -->
+   <!-- <td><button class="button" (click)="OnDelete()">delete</button></td> -->
+   <td><button style="background-color:rgb(45, 160, 45)"  class="button" (click)="createcard(u.regid,u.cardtype,u.phone,u.applied_on)">Verify </button></td>
+    <td><button style="background-color:red" class="button"  (click)="OnDelete(u.regid)">delete</button></td>
+    
+</tr>
+</table>
+ 
+ 
+</form>

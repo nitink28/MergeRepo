@@ -1,0 +1,57 @@
+body {
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+     
+     }
+   .bod{
+     
+     background: #4CA1AF;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   }
+   .topnav {
+   
+     overflow: hidden;
+     background: #4B79A1;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
+   
+   .topnav a {
+     float: right;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 17px;}
+ 
+     .topnav button{
+       background-color: gray;
+       color: white;
+ 
+     }
+ 
+   img{
+   margin-left: 80px;
+   margin-top:70px}
+   
+   .container {
+     display: flex;}
+   
+   .text{
+     margin-top: 60px;
+     margin-left: 40px;
+     font-size : 20px;}
+ 
+   .button {
+     background-color: gray;
+     border: none;
+     color: white;
+     padding: 15px 22px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 4px 2px;
+       cursor: pointer;}
+
+       

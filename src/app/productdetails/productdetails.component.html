@@ -1,0 +1,47 @@
+<div>
+  <div id="navbar">
+    <img src="../../assets/images/logo.jpeg" style="width: 150px; height: 40px; margin-left: 24px; margin-top: 10px;">
+    <ul id="links">
+      <li class="link" style="border: none;background-color: rgb(224, 112, 112);font-size: 17px; font-weight: bold;font-family: 'Times New Roman', Times, serif;" >Welcome! </li>
+      <li class="link"  [routerLink]="['/products']">Show Products</li>
+      <li class="link"  [routerLink]="['/userdashboard']">Show History</li>
+      <li class="link"  [routerLink]="['/indexLink']">Logout</li> 
+    </ul>
+    <br style="clear: both" />
+  </div>
+  <!--Main Page-->
+<div class="whole">
+  <div class="box">
+      <div class="left">
+          <img src="../../assets/images/{{prod.prodimage}}" alt="">
+      </div>
+      <div class="right">
+          <h1>Product Name: <span><b>{{prod.prodname}}</b></span></h1>
+          <h2>Details: <span><b>{{prod.proddesc}}</b></span></h2>
+          <p></p>
+          <h4>Cost: <span><b>{{prod.price}}</b></span></h4>
+          <p>Processing Fees: <span><b>{{processingfees}}</b></span></p>
+      </div>
+  </div>
+  <h4 id="e1" style="text-align: center;">EMI Period</h4>
+  <div class="mid">
+      <form action="">
+          <select class="dropdown" name="" name="selectemi" #selectedemi="ngModel" [(ngModel)]="chosenMod" (change)="emiselected($event)" (ngModelChange)="modo()">
+              <option value="prod.emi_3m" value="mod1">3 Months</option>
+              <option value="prod.emi_6m" value="mod2">6 Months</option>
+              <option value="prod.emi_9m" value="mod3">9 Months</option>
+              <option value="prod.emi_1y" value="mod4">1 Year</option>
+          </select>
+      </form>
+  </div>
+  <div class="p2">
+      <p>EMI STARTING <span><b>{{emivalue}}</b></span> Per Month</p>
+     
+  </div>
+  <div class="b1">
+  <button (click)=saveData()>Buy Now</button>
+  </div>
+  <div class="anc">
+  <a href="">Terms and Conditions</a>
+  </div>
+</div>

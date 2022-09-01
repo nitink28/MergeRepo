@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+</style>
+</head>
+<body>
+<div class="topnav">
+  <img src="../../assets/images/logo.jpeg" style="width: 150px; height: 40px; margin-left: 24px; margin-top: 10px;">
+  <a [routerLink]="['/loginLink']" style="margin-right : 100px"><button style="border: 0px;  padding: 10px 12px; border-radius: 5px;">User Login</button></a>
+  <a [routerLink]="['/registerLink']"><button style="border: 0px; padding: 10px 12px; border-radius: 5px;">User Register</button></a>
+  <a [routerLink]="['/adminlogin']"><button style="border: 0px; padding: 10px 12px; border-radius: 5px;">Admin Login</button></a>
+</div>
+<div class = "bod" style="margin-top: 20px; height: 680px;">
+<div class="container">
+  
+  <div class="image">
+    <img src="../../assets/images/Blackshoes.jpeg" alt=image width="400" height="300">
+  </div>
+  <div class="text" >
+    <p>PRODUCT NAME :Shoes</p>
+    <p style="font-size: 18px;">PRODUCT DETAILS : Black Sports shoes ,light weight and comfortable</p>
+    <p style="font-size: 18px;">COST :Rs.3000</p>
+    <a [routerLink]="['/loginLink']" class="button" style="border-radius: 5px;">BUY NOW</a>
+  </div>
+</div>
+
+<ul style="margin-left: 70px; font-size: 17.5px;"><p><b><u>Eligibility criteria</u></b></p>
+  <li>Only Indian citizen can apply</li>
+  <li>Pan card and Aadhar card are mandatory</li>
+</ul>
+<ul style="margin-left: 70px; font-size: 17.5px"><p><b><u>Terms & Conditions</u></b></p>
+  <li>Joining fee will be charged annually</li>
+<div style="display: flex;">
+<div style="margin-right: 30px;">
+<u><b>GOLD</b></u> <br> Joining fee : 500 <br>  Validity : 2 Years <br> Limit : Rs.40000</div>
+<div><u><b>TITANIUM</b> </u><br> Joining fee : 1000 <br> Validity : 3 Years <br> Limit : Rs.60000</div>
+</div>
+</ul>
+</div>
+</body>
+</html>
